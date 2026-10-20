@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Desenvolvimento Web: explorando código, design e interfaces funcionais com identidade editorial minimalista.">
+  <meta name="author" content="Miguelito">
+  <title>Miguelito — Portfólio Pessoal // Desenvolvimento Web</title>
+
+  <!-- Tipografia: DM Sans e DM Mono via Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet">
+
+  <!-- Folha de Estilos Principal -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon SVG Editorial -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23292824'/><circle cx='50' cy='50' r='32' fill='%23E8755B'/><text x='50' y='58' font-family='monospace' font-size='32' font-weight='bold' fill='%23F3EDE2' text-anchor='middle'>&lt;/&gt;</text></svg>">
+</head>
+<body>
+  <!-- Link acessível para navegação rápida por teclado -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- =========================================================================
+       CABEÇALHO & BARRA DE NAVEGAÇÃO
+       ========================================================================= -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="#inicio" class="brand" aria-label="Ir para o início do portfólio de Miguelito">
+        <span class="brand__name">MIGUELITO</span>
+        <span class="brand__role">/ WEB DEV</span>
+      </a>
+
+      <!-- Navegação Desktop -->
+      <nav class="nav-actions" aria-label="Navegação principal">
+        <ul class="desktop-nav">
+          <li><a href="#inicio" class="nav-link is-active">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre mim</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+
+        <!-- Botão Alternador de Tema (Claro / Escuro) -->
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar para modo escuro" title="Alternar tema">
+          <!-- Ícone do Sol (exibido no modo escuro) -->
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" style="display: none;">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <!-- Ícone da Lua (exibido no modo claro) -->
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+
+        <!-- Botão Menu Mobile (Hambúrguer) -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Abrir menu de navegação">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path class="menu-icon-bars" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Gaveta de Navegação Mobile -->
+    <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Menu móvel">
+      <ul class="mobile-nav-list">
+        <li><a href="#inicio" class="mobile-nav-link">Início</a></li>
+        <li><a href="#sobre" class="mobile-nav-link">Sobre mim</a></li>
+        <li><a href="#projetos" class="mobile-nav-link">Projetos</a></li>
+        <li><a href="#contato" class="mobile-nav-link">Contato</a></li>
+      </ul>
+
+      <div class="mobile-drawer__footer">
+        <span class="tag-mono">PORTFÓLIO // 2026</span>
+        <p style="font-size: 0.8125rem; margin-top: 0.5rem; color: var(--text-secondary);">
+          Desenvolvido com identidade editorial minimalista.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       CONTEÚDO PRINCIPAL
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- -----------------------------------------------------------------------
+         SEÇÃO 1: INÍCIO (HERO EDITORIAL)
+         ----------------------------------------------------------------------- -->
+    <section id="inicio" class="hero-section" aria-labelledby="hero-title">
+      <div class="container">
+        
+        <!-- Faixa Editorial Superior -->
+        <div class="hero-editorial-meta">
+          <span class="tag-mono">
+            <span class="tag-mono--coral">&#9679;</span>
+            PORTFÓLIO PESSOAL / DESENVOLVIMENTO WEB
+          </span>
+          <div class="hero-status-pill">
+            <span class="status-dot"></span>
+            DISPONÍVEL PARA NOVOS PROJETOS
+          </div>
+        </div>
+
+        <div class="hero-layout">
+          <div>
+            <!-- Nome em destaque -->
+            <h1 id="hero-title" class="hero-name">
+              MIGUELITO<span class="hero-name__accent">.</span>
+            </h1>
+
+            <!-- Frase Principal Obrigatória -->
+            <h2 class="hero-headline">
+              Transformando ideias em experiências digitais.
+            </h2>
+
+            <!-- Texto Curto Obrigatório -->
+            <p class="hero-description">
+              Exploro código, design e criatividade para construir experiências digitais funcionais e visualmente cuidadosas.
+            </p>
+
+            <!-- Botões de Ação Obrigatórios -->
+            <div class="hero-actions">
+              <a href="#projetos" class="btn btn-primary" id="btn-ver-projetos">
+                Ver meus projetos
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </a>
+
+              <a href="#sobre" class="btn btn-secondary" id="btn-sobre-mim">
+                Sobre mim
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grade de Metadados Editoriais -->
+        <div class="hero-editorial-footer">
+          <div class="hero-metric">
+            <span class="hero-metric__label">01 // DISCIPLINA</span>
+            <span class="hero-metric__value">Desenvolvimento Frontend</span>
+          </div>
+          <div class="hero-metric">
+            <span class="hero-metric__label">02 // ESTILO</span>
+            <span class="hero-metric__value">Editorial Minimalista</span>
+          </div>
+          <div class="hero-metric">
+            <span class="hero-metric__label">03 // AMBIENTE</span>
+            <span class="hero-metric__value">Google Antigravity IDE</span>
+          </div>
+          <div class="hero-metric">
+            <span class="hero-metric__label">04 // EDIÇÃO</span>
+            <span class="hero-metric__value">2026 // Versão 1.0</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SEÇÃO 2: SOBRE MIM
+         ----------------------------------------------------------------------- -->
+    <section id="sobre" class="section-wrapper" aria-labelledby="sobre-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag-mono">01 // TRAJETÓRIA &amp; INTERESSES</span>
+          <h2 id="sobre-title" class="section-title">Um pouco sobre mim.</h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Coluna Esquerda: Cartão Visual Editorial -->
+          <aside class="about-visual" aria-label="Identidade visual e perfil">
+            <div class="about-portrait-card">
+              <img src="assets/images/avatar.svg" alt="Composição editorial minimalista representando a identidade visual do desenvolvedor" width="530" height="630" loading="lazy">
+              <div class="about-portrait-caption">
+                <span>MIGUELITO // PERFIL</span>
+                <span>DESENVOLVEDOR</span>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Coluna Direita: Textos e Blocos de Aprendizado -->
+          <div class="about-content">
+            <!-- Texto Obrigatório de Abertura -->
+            <p class="about-lead-text">
+              Sou uma pessoa interessada em desenvolvimento web, tecnologia e design de interfaces. Estou construindo minha trajetória na programação, aprendendo a transformar ideias em páginas funcionais e experiências digitais bem planejadas. Gosto de explorar referências visuais, experimentar novas possibilidades e desenvolver projetos que unam estética, organização e usabilidade.
+            </p>
+
+            <!-- Blocos de História e Interesses -->
+            <div class="about-blocks-grid">
+              <!-- Minha história -->
+              <div class="about-block">
+                <h3 class="about-block__title">
+                  <span class="tag-mono--coral">&#9632;</span> Minha história
+                </h3>
+                <p class="about-block__text">
+                  Descobri no desenvolvimento web a combinação ideal entre lógica estruturada e expressão visual. Desde o início dos estudos, tenho me dedicado a compreender os fundamentos da web aberta, priorizando código semântico e arquitetura limpa.
+                </p>
+              </div>
+
+              <!-- Meus interesses -->
+              <div class="about-block">
+                <h3 class="about-block__title">
+                  <span class="tag-mono--coral">&#9632;</span> Meus interesses
+                </h3>
+                <p class="about-block__text">
+                  Design de interfaces (UI/UX), tipografia suíça contemporânea, sistemas de design consistentes, acessibilidade digital (WCAG) e a criação de layouts funcionais com performance otimizada.
+                </p>
+              </div>
+
+              <!-- O que estou aprendendo -->
+              <div class="about-block">
+                <h3 class="about-block__title">
+                  <span class="tag-mono--coral">&#9632;</span> O que estou aprendendo
+                </h3>
+                <p class="about-block__text">
+                  Aprofundando os conceitos de JavaScript ES6+, manipulação avançada de DOM, CSS moderno (Grid, Flexbox, variáveis personalizadas) e práticas recomendadas de versionamento com Git.
+                </p>
+              </div>
+
+              <!-- Minhas habilidades -->
+              <div class="about-block">
+                <h3 class="about-block__title">
+                  <span class="tag-mono--coral">&#9632;</span> Minhas habilidades
+                </h3>
+                <p class="about-block__text">
+                  Organização metódica, atenção aos detalhes visuais, escrita de código legível, empatia com a experiência do usuário final e capacidade contínua de autoaprendizagem.
+                </p>
+              </div>
+            </div>
+
+            <!-- Tecnologias que estudo (Rótulos tipográficos, sem barras de porcentagem) -->
+            <div class="skills-section">
+              <h3 class="skills-title">
+                <span>TECNOLOGIAS &amp; FERRAMENTAS QUE ESTUDO</span>
+                <span class="hairline" style="flex: 1;"></span>
+              </h3>
+              <div class="skills-pills" role="list" aria-label="Tecnologias estudadas">
+                <span class="tech-pill" role="listitem">HTML5 Semântico</span>
+                <span class="tech-pill" role="listitem">CSS3 Moderno</span>
+                <span class="tech-pill" role="listitem">CSS Flexbox &amp; Grid</span>
+                <span class="tech-pill" role="listitem">JavaScript (ES6+)</span>
+                <span class="tech-pill" role="listitem">DOM API</span>
+                <span class="tech-pill" role="listitem">Git &amp; GitHub</span>
+                <span class="tech-pill" role="listitem">Figma / Prototipagem</span>
+                <span class="tech-pill" role="listitem">Acessibilidade (WCAG 2.1)</span>
+                <span class="tech-pill" role="listitem">Design Responsivo</span>
+                <span class="tech-pill" role="listitem">Vercel &amp; Deploy</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SEÇÃO 3: PROJETOS (GALERIA EDITORIAL)
+         ----------------------------------------------------------------------- -->
+    <section id="projetos" class="section-wrapper" aria-labelledby="projetos-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag-mono">02 // GALERIA &amp; ESTUDOS</span>
+          <h2 id="projetos-title" class="section-title">Projetos selecionados.</h2>
+        </div>
+
+        <div class="projects-gallery">
+
+          <!-- CARD: PROJETO 01 -->
+          <article class="project-card" aria-labelledby="proj-1-title">
+            <figure class="project-media">
+              <img src="assets/images/project-1.svg" alt="Prévia visual do Projeto 01: interface com tipografia editorial e grid moderno" width="800" height="500" loading="lazy">
+            </figure>
+            <div class="project-details">
+              <div>
+                <div class="project-meta-header">
+                  <span class="project-number">01</span>
+                  <span class="project-status">PROJETO 01 // DEMONSTRAÇÃO</span>
+                </div>
+                <h3 id="proj-1-title" class="project-title">Interface Editorial Web</h3>
+                <p class="project-description">
+                  Estudo de layout editorial responsivo com foco em hierarquia tipográfica, espaços negativos generosos e contrastes harmônicos para criar uma leitura digital relaxada e elegante.
+                </p>
+                <div class="project-techs" aria-label="Tecnologias do projeto 01">
+                  <span class="project-tech-tag">HTML5</span>
+                  <span class="project-tech-tag">CSS3</span>
+                  <span class="project-tech-tag">CSS Grid</span>
+                  <span class="project-tech-tag">Tipografia Web</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <button type="button" class="project-link project-link--pending" data-action="pending-link" data-project="Projeto 01" data-type="preview">
+                  <span>Ver projeto</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                </button>
+                <button type="button" class="project-link project-link--pending" data-action="pending-link" data-project="Projeto 01" data-type="code">
+                  <span>Ver código</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD: PROJETO 02 -->
+          <article class="project-card" aria-labelledby="proj-2-title">
+            <figure class="project-media">
+              <img src="assets/images/project-2.svg" alt="Prévia visual do Projeto 02: painel com gráficos minimalistas e fluxo de dados" width="800" height="500" loading="lazy">
+            </figure>
+            <div class="project-details">
+              <div>
+                <div class="project-meta-header">
+                  <span class="project-number">02</span>
+                  <span class="project-status">PROJETO 02 // DEMONSTRAÇÃO</span>
+                </div>
+                <h3 id="proj-2-title" class="project-title">Aplicação Web Interativa</h3>
+                <p class="project-description">
+                  Interface dinâmica desenvolvida em JavaScript puro, explorando manipulação reativa do DOM, controle de fluxos assíncronos e renderização vetorial de métricas visuais.
+                </p>
+                <div class="project-techs" aria-label="Tecnologias do projeto 02">
+                  <span class="project-tech-tag">JavaScript (ES6+)</span>
+                  <span class="project-tech-tag">DOM API</span>
+                  <span class="project-tech-tag">SVG Dinâmico</span>
+                  <span class="project-tech-tag">Event Driven</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <button type="button" class="project-link project-link--pending" data-action="pending-link" data-project="Projeto 02" data-type="preview">
+                  <span>Ver projeto</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                </button>
+                <button type="button" class="project-link project-link--pending" data-action="pending-link" data-project="Projeto 02" data-type="code">
+                  <span>Ver código</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD: PROJETO 03 -->
+          <article class="project-card" aria-labelledby="proj-3-title">
+            <figure class="project-media">
+              <img src="assets/images/project-3.svg" alt="Prévia visual do Projeto 03: tokens de design, amostras de cores e botões acessíveis" width="800" height="500" loading="lazy">
+            </figure>
+            <div class="project-details">
+              <div>
+                <div class="project-meta-header">
+                  <span class="project-number">03</span>
+                  <span class="project-status">PROJETO 03 // DEMONSTRAÇÃO</span>
+                </div>
+                <h3 id="proj-3-title" class="project-title">Sistema de Design &amp; Componentes</h3>
+                <p class="project-description">
+                  Guia de estilos e biblioteca de componentes modulares construída do zero com variáveis CSS, contemplando conformidade WCAG AA, navegação por teclado e modos claro e escuro integrados.
+                </p>
+                <div class="project-techs" aria-label="Tecnologias do projeto 03">
+                  <span class="project-tech-tag">Design Tokens</span>
+                  <span class="project-tech-tag">CSS Custom Properties</span>
+                  <span class="project-tech-tag">Acessibilidade (a11y)</span>
+                  <span class="project-tech-tag">Modular UI</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <button type="button" class="project-link project-link--pending" data-action="pending-link" data-project="Projeto 03" data-type="preview">
+                  <span>Ver projeto</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                </button>
+                <button type="button" class="project-link project-link--pending" data-action="pending-link" data-project="Projeto 03" data-type="code">
+                  <span>Ver código</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SEÇÃO 4: CONTATO
+         ----------------------------------------------------------------------- -->
+    <section id="contato" class="section-wrapper" aria-labelledby="contato-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag-mono">03 // CANAL DIRETO</span>
+          <h2 id="contato-title" class="section-title">Vamos conversar?</h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Coluna Esquerda: Texto de Convite & Canais Sociais -->
+          <div class="contact-info">
+            <div>
+              <p class="contact-lead">
+                Estou sempre à disposição para trocar ideias sobre desenvolvimento web, propostas de colaboração criativa, novos desafios ou oportunidades profissionais. Fique à vontade para me enviar uma mensagem ou me encontrar nos canais abaixo.
+              </p>
+
+              <div class="contact-channels" aria-label="Canais diretos de contato">
+                <!-- E-mail direto -->
+                <a href="mailto:seu-email@exemplo.com" class="contact-channel-item" id="link-email">
+                  <svg class="contact-channel-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <div class="contact-channel-details">
+                    <span class="contact-channel-title">E-MAIL DIRETO</span>
+                    <span class="contact-channel-val">seu-email@exemplo.com</span>
+                  </div>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" class="contact-channel-item" id="link-github">
+                  <svg class="contact-channel-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                  <div class="contact-channel-details">
+                    <span class="contact-channel-title">GITHUB</span>
+                    <span class="contact-channel-val">github.com/seu-usuario</span>
+                  </div>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer" class="contact-channel-item" id="link-linkedin">
+                  <svg class="contact-channel-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46v-8.37M7.86 6.72a1.63 1.63 0 0 0-1.63 1.62c0 .9.73 1.63 1.63 1.63.9 0 1.63-.73 1.63-1.63 0-.9-.73-1.62-1.63-1.62z"/>
+                  </svg>
+                  <div class="contact-channel-details">
+                    <span class="contact-channel-title">LINKEDIN</span>
+                    <span class="contact-channel-val">linkedin.com/in/seu-perfil</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <span class="tag-mono" style="margin-top: 1rem;">RESPOSTA ESTIMADA: EM ATÉ 48 HORAS</span>
+          </div>
+
+          <!-- Coluna Direita: Formulário de Contato com Validação -->
+          <div class="contact-form-card">
+            <form id="contact-form" novalidate aria-label="Formulário de mensagem">
+              
+              <!-- Campo: Nome -->
+              <div class="form-group">
+                <label for="contact-name" class="form-label">
+                  Seu nome <span class="required-star" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="contact-name" 
+                  name="name" 
+                  class="form-input" 
+                  placeholder="Como posso te chamar?" 
+                  required 
+                  minlength="2"
+                  aria-required="true"
+                  aria-describedby="name-error">
+                <div id="name-error" class="field-error-msg" role="alert">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  <span>Por favor, informe seu nome (mínimo de 2 caracteres).</span>
+                </div>
+              </div>
+
+              <!-- Campo: E-mail -->
+              <div class="form-group">
+                <label for="contact-email" class="form-label">
+                  Seu e-mail <span class="required-star" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="contact-email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="exemplo@dominio.com" 
+                  required
+                  aria-required="true"
+                  aria-describedby="email-error">
+                <div id="email-error" class="field-error-msg" role="alert">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  <span>Informe um endereço de e-mail válido (ex: nome@dominio.com).</span>
+                </div>
+              </div>
+
+              <!-- Campo: Assunto -->
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">
+                  Assunto <span class="required-star" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="contact-subject" 
+                  name="subject" 
+                  class="form-input" 
+                  placeholder="Sobre o que gostaria de conversar?" 
+                  required
+                  minlength="3"
+                  aria-required="true"
+                  aria-describedby="subject-error">
+                <div id="subject-error" class="field-error-msg" role="alert">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  <span>Informe o assunto da mensagem (mínimo de 3 caracteres).</span>
+                </div>
+              </div>
+
+              <!-- Campo: Mensagem -->
+              <div class="form-group">
+                <label for="contact-message" class="form-label">
+                  Mensagem <span class="required-star" aria-hidden="true">*</span>
+                </label>
+                <textarea 
+                  id="contact-message" 
+                  name="message" 
+                  class="form-textarea" 
+                  placeholder="Escreva sua mensagem aqui..." 
+                  required
+                  minlength="10"
+                  aria-required="true"
+                  aria-describedby="message-error"></textarea>
+                <div id="message-error" class="field-error-msg" role="alert">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  <span>Por favor, escreva uma mensagem detalhada (mínimo de 10 caracteres).</span>
+                </div>
+              </div>
+
+              <!-- Botão de Envio -->
+              <button type="submit" class="btn btn-primary" id="btn-submit-form" style="width: 100%;">
+                <span>Enviar mensagem</span>
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                </svg>
+              </button>
+
+              <!-- Aviso transparente sobre o serviço de envio -->
+              <p class="form-disclaimer">
+                * Os dados preenchidos são validados localmente. Como este projeto é estático, o envio real de mensagens depende da configuração de um serviço externo (como Formspree, Resend ou EmailJS), conforme documentado no README.
+              </p>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       MODAL DE FEEDBACK DO FORMULÁRIO (AVISO CLARO DE ENVIO)
+       ========================================================================= -->
+  <div id="form-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-status-title" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modal-status-title" class="modal-title">
+          <span style="color: var(--accent-coral);">&#10003;</span> Validação Concluída
+        </h3>
+        <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Fechar janela">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          Obrigado pelo contato! Todos os campos do formulário foram validados com sucesso pelo JavaScript local.
+        </p>
+
+        <div class="modal-notice-box">
+          <strong>Aviso sobre o envio real:</strong><br>
+          Este é um site estático e ainda não possui um serviço de backend ou gateway de e-mail integrado (como Formspree, EmailJS ou Resend). Portanto, a mensagem <strong>não foi transmitida pela rede</strong>.<br><br>
+          Para habilitar a entrega real em seu e-mail, consulte o arquivo <code>README.md</code> e configure sua chave de API no arquivo <code>js/script.js</code>.
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" class="btn btn-secondary" id="modal-ok-btn">Entendido</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL INFORMATIVO PARA LINKS PENDENTES DE PROJETOS
+       ========================================================================= -->
+  <div id="project-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="proj-modal-title" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="proj-modal-title" class="modal-title">
+          <span style="color: var(--accent-coral);">&#9881;</span> Status do Repositório
+        </h3>
+        <button type="button" class="modal-close-btn" id="proj-modal-close-btn" aria-label="Fechar janela">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p id="proj-modal-desc">
+          Este link refere-se a um projeto demonstrativo com repositório ainda em fase de configuração.
+        </p>
+        <div class="modal-notice-box">
+          Conforme as diretrizes deste portfólio, links fictícios não são apresentados como se fossem reais. Você pode substituir este endereço pela URL definitiva do seu repositório no arquivo <code>index.html</code>.
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" class="btn btn-secondary" id="proj-modal-ok-btn">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       RODAPÉ (FOOTER)
+       ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      
+      <div class="footer-top">
+        <!-- Identificação -->
+        <div>
+          <h2 class="footer-brand__name">MIGUELITO</h2>
+          <p class="footer-phrase">
+            Desenvolvido com cuidado e curiosidade.
+          </p>
+          <span class="tag-mono" style="margin-top: 1rem; display: inline-block;">
+            AMPLIANDO HORIZONTES // WEB &amp; CÓDIGO
+          </span>
+        </div>
+
+        <!-- Links de Navegação -->
+        <div>
+          <h3 class="footer-column__title">Navegação</h3>
+          <ul class="footer-links-list">
+            <li><a href="#inicio" class="footer-link">Início</a></li>
+            <li><a href="#sobre" class="footer-link">Sobre mim</a></li>
+            <li><a href="#projetos" class="footer-link">Projetos</a></li>
+            <li><a href="#contato" class="footer-link">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Conexões -->
+        <div>
+          <h3 class="footer-column__title">Conexões</h3>
+          <ul class="footer-links-list">
+            <li><a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a></li>
+            <li><a href="mailto:seu-email@exemplo.com" class="footer-link">E-mail</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Linha Final -->
+      <div class="footer-bottom">
+        <div>
+          <span>&copy; <span id="current-year">2026</span> Miguelito. Todos os direitos reservados.</span>
+        </div>
+        <button type="button" class="back-to-top" id="btn-back-to-top" aria-label="Voltar ao topo da página">
+          <span>Voltar ao topo</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Script Principal com Interatividades -->
+  <script src="js/script.js"></script>
+</body>
+</html>

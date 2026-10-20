@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #D9CDBB; }
+      .sheet { fill: #F3EDE2; stroke: #292824; stroke-width: 1.5; }
+      .dark-rect { fill: #292824; }
+      .coral-accent { fill: #E8755B; }
+      .coral-stroke { stroke: #E8755B; stroke-width: 2.5; fill: none; }
+      .dashed-line { stroke: #756F64; stroke-width: 1.5; stroke-dasharray: 4 4; fill: none; }
+      .solid-line { stroke: #292824; stroke-width: 1.5; }
+      .thin-line { stroke: rgba(41, 40, 36, 0.25); stroke-width: 1; }
+      .label-text { font-family: 'DM Mono', monospace, sans-serif; font-size: 11px; fill: #756F64; letter-spacing: 1.5px; }
+      .code-font { font-family: 'DM Mono', monospace, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="800" height="500" class="bg"/>
+
+  <!-- Subtle editorial guidelines -->
+  <line x1="60" y1="0" x2="60" y2="500" class="thin-line"/>
+  <line x1="740" y1="0" x2="740" y2="500" class="thin-line"/>
+
+  <!-- Main Container -->
+  <rect x="90" y="65" width="620" height="370" rx="4" class="sheet"/>
+
+  <!-- Window Header -->
+  <rect x="90" y="65" width="620" height="38" class="dark-rect"/>
+  <circle cx="115" cy="84" r="4.5" fill="#E8755B"/>
+  <circle cx="130" cy="84" r="4.5" fill="#D9CDBB"/>
+  <circle cx="145" cy="84" r="4.5" fill="#756F64"/>
+  <text x="400" y="88" fill="#D9CDBB" class="code-font" font-size="11" text-anchor="middle" letter-spacing="1">PROJECT-02 // INTERACTIVE APPLICATION</text>
+
+  <!-- Left Sidebar Mock -->
+  <rect x="90" y="103" width="160" height="332" fill="#F3EDE2" stroke="#292824" stroke-width="1"/>
+  <line x1="90" y1="145" x2="250" y2="145" class="solid-line"/>
+  <text x="110" y="132" class="code-font" font-size="11" fill="#756F64">NAV // METRICS</text>
+  
+  <!-- Active menu item -->
+  <rect x="100" y="160" width="140" height="32" rx="3" fill="#292824"/>
+  <circle cx="118" cy="176" r="4" fill="#E8755B"/>
+  <rect x="130" y="172" width="70" height="8" rx="2" fill="#F3EDE2"/>
+
+  <!-- Other menu items -->
+  <rect x="130" y="210" width="60" height="8" rx="2" fill="#756F64" opacity="0.6"/>
+  <rect x="130" y="240" width="85" height="8" rx="2" fill="#756F64" opacity="0.6"/>
+  <rect x="130" y="270" width="50" height="8" rx="2" fill="#756F64" opacity="0.6"/>
+
+  <rect x="105" y="360" width="130" height="50" rx="3" fill="#D9CDBB" stroke="#292824" stroke-width="1"/>
+  <text x="115" y="380" class="code-font" font-size="9" fill="#292824">STATE: MOUNTED</text>
+  <text x="115" y="398" class="code-font" font-size="10" font-weight="700" fill="#E8755B">LATENCY 14ms</text>
+
+  <!-- Right Canvas: Interactive Chart & Cards -->
+  <!-- Top Stats Row -->
+  <rect x="275" y="125" width="200" height="75" rx="3" fill="#D9CDBB" stroke="#292824" stroke-width="1"/>
+  <text x="290" y="148" class="code-font" font-size="10" fill="#756F64">DATA FLOW RATE</text>
+  <text x="290" y="178" font-family="'DM Sans', sans-serif" font-weight="700" font-size="22" fill="#292824">99.8%</text>
+  <circle cx="450" cy="162" r="10" fill="#292824"/>
+  <path d="M446 162 L449 165 L455 159" stroke="#E8755B" stroke-width="2" fill="none"/>
+
+  <rect x="495" y="125" width="195" height="75" rx="3" fill="#D9CDBB" stroke="#292824" stroke-width="1"/>
+  <text x="510" y="148" class="code-font" font-size="10" fill="#756F64">ASYNC DISPATCH</text>
+  <text x="510" y="178" font-family="'DM Sans', sans-serif" font-weight="700" font-size="22" fill="#E8755B">0.04s</text>
+
+  <!-- Elegant Graph Area -->
+  <rect x="275" y="220" width="415" height="190" rx="3" fill="#292824"/>
+  <line x1="275" y1="270" x2="690" y2="270" stroke="rgba(243, 237, 226, 0.1)" stroke-width="1"/>
+  <line x1="275" y1="320" x2="690" y2="320" stroke="rgba(243, 237, 226, 0.1)" stroke-width="1"/>
+  <line x1="275" y1="370" x2="690" y2="370" stroke="rgba(243, 237, 226, 0.1)" stroke-width="1"/>
+
+  <!-- Wave chart in coral -->
+  <path d="M 300 370 Q 340 350, 370 290 T 450 310 T 520 260 T 600 280 T 660 240" fill="none" stroke="#E8755B" stroke-width="3"/>
+  <!-- Highlight circles -->
+  <circle cx="370" cy="290" r="5" fill="#F3EDE2" stroke="#E8755B" stroke-width="2"/>
+  <circle cx="520" cy="260" r="5" fill="#F3EDE2" stroke="#E8755B" stroke-width="2"/>
+  <circle cx="660" cy="240" r="6" fill="#E8755B"/>
+
+  <text x="295" y="245" class="code-font" font-size="10" fill="#D9CDBB">REALTIME RENDER MATRIX</text>
+  <text x="660" y="245" class="code-font" font-size="10" fill="#756F64" text-anchor="end">FPS: 60</text>
+</svg>

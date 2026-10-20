@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #D9CDBB; }
+      .sheet { fill: #F3EDE2; stroke: #292824; stroke-width: 1.5; }
+      .dark-rect { fill: #292824; }
+      .coral-accent { fill: #E8755B; }
+      .coral-stroke { stroke: #E8755B; stroke-width: 2; fill: none; }
+      .solid-line { stroke: #292824; stroke-width: 1.5; }
+      .thin-line { stroke: rgba(41, 40, 36, 0.25); stroke-width: 1; }
+      .code-font { font-family: 'DM Mono', monospace, sans-serif; }
+      .sans-font { font-family: 'DM Sans', sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="800" height="500" class="bg"/>
+
+  <line x1="60" y1="0" x2="60" y2="500" class="thin-line"/>
+  <line x1="740" y1="0" x2="740" y2="500" class="thin-line"/>
+
+  <!-- Main Window -->
+  <rect x="90" y="65" width="620" height="370" rx="4" class="sheet"/>
+
+  <!-- Top bar -->
+  <rect x="90" y="65" width="620" height="38" class="dark-rect"/>
+  <circle cx="115" cy="84" r="4.5" fill="#E8755B"/>
+  <circle cx="130" cy="84" r="4.5" fill="#D9CDBB"/>
+  <circle cx="145" cy="84" r="4.5" fill="#756F64"/>
+  <text x="400" y="88" fill="#D9CDBB" class="code-font" font-size="11" text-anchor="middle" letter-spacing="1">PROJECT-03 // DESIGN SYSTEM &amp; TOKENS</text>
+
+  <!-- Left Column: Color Palette & Tokens -->
+  <rect x="120" y="125" width="240" height="280" rx="3" fill="#F3EDE2" stroke="#292824" stroke-width="1"/>
+  <text x="140" y="152" class="code-font" font-size="11" fill="#756F64">TOKEN // COLOR PALETTE</text>
+  <line x1="140" y1="162" x2="340" y2="162" class="solid-line"/>
+
+  <!-- Swatch 1 -->
+  <rect x="140" y="180" width="32" height="32" rx="3" fill="#F3EDE2" stroke="#292824" stroke-width="1"/>
+  <text x="185" y="196" class="sans-font" font-size="12" font-weight="700" fill="#292824">Bege Areia</text>
+  <text x="185" y="210" class="code-font" font-size="10" fill="#756F64">#F3EDE2</text>
+
+  <!-- Swatch 2 -->
+  <rect x="140" y="225" width="32" height="32" rx="3" fill="#292824"/>
+  <text x="185" y="241" class="sans-font" font-size="12" font-weight="700" fill="#292824">Grafite</text>
+  <text x="185" y="255" class="code-font" font-size="10" fill="#756F64">#292824</text>
+
+  <!-- Swatch 3 -->
+  <rect x="140" y="270" width="32" height="32" rx="3" fill="#E8755B"/>
+  <text x="185" y="286" class="sans-font" font-size="12" font-weight="700" fill="#292824">Coral Queimado</text>
+  <text x="185" y="300" class="code-font" font-size="10" fill="#E8755B">#E8755B</text>
+
+  <!-- Swatch 4 -->
+  <rect x="140" y="315" width="32" height="32" rx="3" fill="#D9CDBB" stroke="#292824" stroke-width="1"/>
+  <text x="185" y="331" class="sans-font" font-size="12" font-weight="700" fill="#292824">Bege Taupe</text>
+  <text x="185" y="345" class="code-font" font-size="10" fill="#756F64">#D9CDBB</text>
+
+  <!-- Swatch 5 -->
+  <rect x="140" y="360" width="32" height="32" rx="3" fill="#756F64"/>
+  <text x="185" y="376" class="sans-font" font-size="12" font-weight="700" fill="#292824">Cinza Quente</text>
+  <text x="185" y="390" class="code-font" font-size="10" fill="#756F64">#756F64</text>
+
+  <!-- Right Column: Component Specimen -->
+  <rect x="380" y="125" width="305" height="280" rx="3" fill="#D9CDBB" stroke="#292824" stroke-width="1"/>
+  <text x="405" y="152" class="code-font" font-size="11" fill="#756F64">COMPONENTS // ATOMS</text>
+  <line x1="405" y1="162" x2="660" y2="162" class="solid-line"/>
+
+  <!-- Buttons specimens -->
+  <rect x="405" y="180" width="120" height="36" rx="2" fill="#E8755B"/>
+  <text x="465" y="202" class="sans-font" font-size="11" font-weight="700" fill="#F3EDE2" text-anchor="middle">PRIMARY</text>
+
+  <rect x="540" y="180" width="120" height="36" rx="2" fill="#F3EDE2" stroke="#292824" stroke-width="1.5"/>
+  <text x="600" y="202" class="sans-font" font-size="11" font-weight="700" fill="#292824" text-anchor="middle">OUTLINE</text>
+
+  <!-- Input specimen -->
+  <rect x="405" y="235" width="255" height="38" rx="2" fill="#F3EDE2" stroke="#292824" stroke-width="1"/>
+  <text x="420" y="258" class="code-font" font-size="11" fill="#756F64">input:focus_ring</text>
+  <rect x="640" y="247" width="8" height="14" fill="#E8755B"/>
+
+  <!-- Tags / Pills specimens -->
+  <rect x="405" y="295" width="70" height="24" rx="12" fill="#292824"/>
+  <text x="440" y="311" class="code-font" font-size="9" fill="#F3EDE2" text-anchor="middle">HTML5</text>
+
+  <rect x="485" y="295" width="70" height="24" rx="12" fill="#292824"/>
+  <text x="520" y="311" class="code-font" font-size="9" fill="#F3EDE2" text-anchor="middle">CSS3</text>
+
+  <rect x="565" y="295" width="95" height="24" rx="12" fill="#E8755B"/>
+  <text x="612" y="311" class="code-font" font-size="9" fill="#F3EDE2" text-anchor="middle">JAVASCRIPT</text>
+
+  <!-- Toggle Switch & Badge -->
+  <rect x="405" y="345" width="48" height="26" rx="13" fill="#292824"/>
+  <circle cx="437" cy="358" r="9" fill="#E8755B"/>
+  <text x="465" y="362" class="code-font" font-size="10" fill="#292824">THEME: DARK</text>
+
+  <rect x="575" y="347" width="85" height="22" rx="2" fill="#F3EDE2" stroke="#292824" stroke-width="1"/>
+  <text x="617" y="362" class="code-font" font-size="9" fill="#756F64" text-anchor="middle">WCAG 2.1 AA</text>
+</svg>
